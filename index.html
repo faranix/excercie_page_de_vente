@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Page De Vente | Entrainement</title>
+</head>
+<body>
+    <section class="container">
+        <div class="overlay">
+            <div class="overlay__box">
+                <i onclick="closeOverlay()" class="fas fa-times"></i>
+                <p id="message">Merci</p>
+            </div>
+        </div>
+
+        <div class="text">
+            <div class="fleche-bas">
+                <div class="menu__icon-1">
+                    <i onclick="menu()" class="fas fa-ellipsis-h"></i>                
+                </div>
+                <div class="menu__icon-2">
+                    <i onclick="menu()" class="fas fa-arrow-circle-down"></i>
+                </div>
+            </div>
+        <div class="menu" style="display: block;">
+                <div class="text__title">
+                    <h1>Chaise de Luxe</h1>
+                    <p>La compagnie de luxe</p>
+                </div>
+                <div class="text__price">
+                    <p>450€</p>
+                </div>
+                <div class="text__couleur">
+                    <h3>Couleur:</h3>
+                    <div class="text__couleur__box">
+                        <button onclick="changeImg(id)" type="button"></button>
+                        <button onclick="changeImg(id)" type="button"></button>
+                        <button onclick="changeImg(id)" type="button"></button>
+                    </div>
+                </div>
+                <div class="text__taille">
+                    <h3>Taille:</h3>
+                    <p>48,1cm x 51cm</p>
+                </div>
+                <div class="text__description">
+                    <h3>Description:</h3>
+                    <p>Chaise confortable en polypropylène.</p>
+                    <p>Coussin inclus.</p>
+                    <p>Pieds en bois peint en bois MDF de haute qualité.</p>
+                </div>
+                <div class="text__btn">
+                    <button onclick="openOverlay(`Merci de votre achat !`)" id="acheter">Acheter</button>
+                    <button onclick="openOverlay(`Votre article a été ajouter au panier !`)" id="ajout">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="img">
+            <img id="changeImg" src="/assets/images/img1.jpg" alt="Ceci est une image d'une chaise">
+        </div>
+    </section>
+    
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
