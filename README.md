@@ -1,4 +1,4 @@
-# Excercie Page de Vente
+# Exercice Page de Vente
 
 ## Objectif 
 
